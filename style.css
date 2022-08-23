@@ -33,9 +33,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-.selected {
-  margin-bottom: 18em;
-}
 .player-btn {
   background-color: #015196;
   padding-inline: 30px;
@@ -43,4 +40,12 @@ main {
 }
 .card-body {
   text-align: center;
+}
+
+.selected {
+  width: 280px;
+  height: 280px;
+}
+ol > li {
+  padding: 5px;
 }
