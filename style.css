@@ -1,0 +1,26 @@
+.header-section {
+  background-color: black;
+  margin-bottom: 2rem;
+}
+.title-section {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section > p {
+  width: 20em;
+  text-align: center;
+}
+.middle-section {
+  display: flex;
+  flex-direction: row;
+}
+.right-middle-section {
+  display: flex;
+  flex-direction: column;
+}
+.selected {
+  margin-bottom: 18em;
+}
