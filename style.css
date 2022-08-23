@@ -1,6 +1,9 @@
+body {
+  color: white;
+}
+
 .header-section {
   background-color: black;
-  margin-bottom: 2rem;
 }
 .title-section {
   padding: 5%;
@@ -13,6 +16,15 @@
   width: 20em;
   text-align: center;
 }
+main {
+  background-color: black;
+}
+.card {
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 5px 5px #888888;
+}
 .middle-section {
   display: flex;
   flex-direction: row;
@@ -23,4 +35,12 @@
 }
 .selected {
   margin-bottom: 18em;
+}
+.player-btn {
+  background-color: #015196;
+  padding-inline: 30px;
+  border-radius: 8px;
+}
+.card-body {
+  text-align: center;
 }
