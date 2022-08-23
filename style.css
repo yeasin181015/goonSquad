@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 body {
   color: white;
 }
-
+.card-img-top {
+  width: 264px;
+  height: 204px;
+}
 .header-section {
   background-color: black;
 }
@@ -9,12 +13,20 @@ body {
   padding: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .title-section > p {
+  font-family: "Poppins", sans-serif;
   width: 20em;
   text-align: center;
+}
+.title-section > h1 {
+  font-family: "Tangerine", serif;
+  font-size: 70px;
+  text-shadow: 4px 4px 4px #aaa;
+  color: pink;
+  padding-bottom: 30px;
 }
 main {
   background-color: black;
@@ -28,11 +40,23 @@ main {
 .middle-section {
   display: flex;
   flex-direction: row;
+  padding-bottom: 100px;
 }
 .right-middle-section {
   display: flex;
   flex-direction: column;
 }
+#calculate-button {
+  background-color: #015196;
+  padding: 10px 110px 10px 100px;
+  border-radius: 8px;
+}
+#player-expense-div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
 .player-btn {
   background-color: #015196;
   padding-inline: 30px;
@@ -48,4 +72,15 @@ main {
 }
 ol > li {
   padding: 5px;
+}
+footer {
+  background-color: black;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  background-color: black;
+}
+footer > p {
+  font-family: "Manrope";
+  font-style: normal;
 }

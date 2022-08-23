@@ -11,7 +11,6 @@ for (var i = 0; i < playerArray.length; i++) {
 }
 
 function selectClicked(event) {
-  //console.log(event.target.id);
   const parentID = getElementidFunction(this.id).parentElement.id;
   const playerName = getElementidFunction(parentID).firstElementChild.innerHTML;
   addNametolist(playerName, event.target.id);
@@ -20,6 +19,7 @@ function selectClicked(event) {
 function addNametolist(name, disableID) {
   if (count < 5) {
     const node = document.createElement("li");
+    name = (count + 1).toString() + ". " + name;
     const player = document.createTextNode(name);
     node.appendChild(player);
     document.querySelector("ol").appendChild(node);
@@ -31,6 +31,8 @@ function addNametolist(name, disableID) {
 }
 function disableButton(ButtonIDdisable) {
   getElementidFunction(ButtonIDdisable).disabled = true;
+  getElementidFunction(ButtonIDdisable).style.backgroundColor = "#F5F5F5";
+  getElementidFunction(ButtonIDdisable).style.color = "#000000";
 }
 
 const calculateButton = getElementidFunction("calculate-button");
@@ -41,7 +43,7 @@ calculateButton.addEventListener("click", function (event) {
 });
 
 function calculatePlayerCost(n) {
-  const cost = parseFloat(document.getElementById("per-player-cost").innerText);
+  const cost = parseFloat(document.getElementById("per-player-cost").value);
   var sumOfCost = parseFloat(n) * cost;
   getElementidFunction("player-expense").innerText = "$" + sumOfCost;
   TOTAL_SUM = sumOfCost;
@@ -49,8 +51,8 @@ function calculatePlayerCost(n) {
 
 getElementidFunction("calculateTotal").addEventListener("click", function () {
   const finalTotalCost =
-    parseFloat(getElementidFunction("manager-cost").innerText) +
-    parseFloat(getElementidFunction("coach-cost").innerText) +
+    parseFloat(getElementidFunction("manager-cost").value) +
+    parseFloat(getElementidFunction("coach-cost").value) +
     TOTAL_SUM;
   getElementidFunction("total-cost").innerText = "$" + finalTotalCost;
 });
