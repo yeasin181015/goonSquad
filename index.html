@@ -32,7 +32,7 @@
             src="images/messi.jpg"
             alt="Card image cap"
           />
-          <div class="card-body" id="messi-card">
+          <div class="card-body" id="messi">
             <h5 class="card-title">Lionel Messi</h5>
             <button
               id="messi-card"
@@ -50,7 +50,7 @@
               src="images/ronaldo.jpg"
               alt="Card image cap"
             />
-            <div class="card-body" id="roanldo-card">
+            <div class="card-body" id="roanldo">
               <h5 class="card-title">Cristiano Ronaldo</h5>
               <button
                 id="ronaldo-card"
@@ -69,8 +69,8 @@
               src="images/bale.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Bale</h5>
+            <div class="card-body" id="bale">
+              <h5 class="card-title">Gareth Bale</h5>
               <button
                 class="player-btn"
                 id="bale-card"
@@ -88,8 +88,8 @@
               src="images/dimaria.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Di Maria</h5>
+            <div class="card-body" id="maria">
+              <h5 class="card-title">Angel Di Maria</h5>
               <button
                 class="player-btn"
                 id="maria-card"
@@ -107,8 +107,8 @@
               src="images/haland.png"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Haland</h5>
+            <div class="card-body" id="haland">
+              <h5 class="card-title">Erling Haland</h5>
               <button
                 class="player-btn"
                 id="haland-card"
@@ -126,8 +126,8 @@
               src="images/lewandowski.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Lewandowski</h5>
+            <div class="card-body" id="lewandowski">
+              <h5 class="card-title" >Robert Lewandowski</h5>
               <button
                 class="player-btn"
                 id="lewandowski-card"
@@ -145,7 +145,7 @@
               src="images/mane.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
+            <div class="card-body" id="mane">
               <h5 class="card-title">Sadio Mane</h5>
               <button
                 class="player-btn"
@@ -164,8 +164,8 @@
               src="images/mbappe.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Mbappe</h5>
+            <div class="card-body" id="mbappe">
+              <h5 class="card-title">Kylian Mbappe</h5>
               <button
                 class="player-btn"
                 id="mbappe-card"
@@ -183,8 +183,8 @@
               src="images/neymar.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Neymar</h5>
+            <div class="card-body" id="neymar">
+              <h5 class="card-title">Neymar Jr</h5>
               <button
                 class="player-btn"
                 id="neymar-card"
@@ -202,7 +202,7 @@
               src="images/reus.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
+            <div class="card-body" id="reus">
               <h5 class="card-title">Marco Reus</h5>
               <button
                 class="player-btn"
@@ -221,8 +221,8 @@
               src="images/salah.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title">Salah</h5>
+            <div class="card-body" id="salah">
+              <h5 class="card-title">Mo Salah</h5>
               <button
                 class="player-btn"
                 id="salah-card"
@@ -240,7 +240,7 @@
               src="images/hazard.png"
               alt="Card image cap"
             />
-            <div class="card-body">
+            <div class="card-body" id="hazard">
               <h5 class="card-title">Eden Hazard</h5>
               <button
                 class="player-btn"
@@ -255,11 +255,17 @@
       </div>
       <div class="right-middle-section">
         <div class="selected" style="border: 2px solid black">
-          <div>Selected</div>
+          <div>
+            <h2>Selected</h2>
+            </h2>
+            <ol id="player-list">
+            </ol>
+          </div>
           <div></div>
         </div>
         <div class="calculation" style="border: 2px solid black">
           <h1>Selected</h1>
+          <ol id="player-list"></ol>
         </div>
       </div>
     </section>
